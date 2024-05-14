@@ -12,6 +12,7 @@
 html {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -61,7 +62,7 @@ body {
   background-color: white;
   position: relative;
   left: -155px;
-  border: 5px solid green;
+  border: 5px solid rgb(114, 114, 114);
   border-style: double;
   padding: 5px;
 }
@@ -76,8 +77,8 @@ body {
   justify-content: center;
   border: 1px solid white;
   border-style: double;
-  /* border-top-right-radius: 18px;
-  border-bottom-left-radius: 18px;  */
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 18px;
   animation-name: blend;
   animation-duration: 2s;
   animation-timing-function: ease-in;
@@ -118,7 +119,7 @@ h1 {
 
 .card {
   background-color: rgb(0, 0, 0, 0.7);
-  height: 100%;
+  height: 90%;
   width: 65vw;
   display: flex;
   flex-direction: column;
@@ -126,14 +127,17 @@ h1 {
   justify-content: center;
   gap: 1rem;
   /* border: 12px solid rgb(216, 216, 216); */
-  margin: auto;
+  /* margin: auto; */
   scroll-snap-align: center;
-  /* position: relative;
-  top: -380px; */
-  border-style: double;
+  position: absolute;
+  top: 30px;
+  left: auto;
 }
 
-li a {
+.card1 {
+  margin-left: auto;
+}
+/* li a {
   text-decoration: none;
   color: hwb(208 94% 0% / 0.863);
   font-size: 1.5rem;
@@ -141,26 +145,26 @@ li a {
 }
 
 li a:hover {
-  /* border-bottom: 1px solid rgb(226, 230, 9); */
+  border-bottom: 1px solid rgb(226, 230, 9);
   color: rgb(255, 255, 255);
   line-height: 1px;
-}
+} */
 
 h2 {
   font-size: 2.8rem;
   color: greenyellow;
+  text-align: center;
 }
 
 .page-bar {
   position: absolute;
-  top: 794px;
+  bottom: 20px;
   z-index: 1;
   margin: auto;
   font-size: 2rem;
-  letter-spacing: 2rem;
+  letter-spacing: 1rem;
   background-color: rgba(50, 112, 2, 0.8);
   text-decoration: none;
-  /* border-style: double; */
   padding-left: 25px;
 }
 
@@ -198,11 +202,30 @@ span {
   font-size: 1.7rem;
 }
 
-#sec1 .card {
+#sec1 {
   gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 video {
   /* border: 1px solid greenyellow; */
   padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1255px) {
+  .card {
+    width: 90%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .logo {
+    height: 75px;
+  }
+  .navbar ul {
+  }
 }
