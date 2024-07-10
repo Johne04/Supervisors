@@ -53,11 +53,6 @@ body {
   gap: 3rem;
 }
 
-.navbar ul li {
-  align-self: center;
-  font-weight: 600;
-}
-
 .logo {
   background-color: white;
   position: relative;
@@ -216,6 +211,9 @@ video {
   height: auto;
 }
 
+.sec #sec7 {
+  padding: 10rem;
+}
 @media (max-width: 1255px) {
   .card {
     width: 90%;
